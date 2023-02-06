@@ -7,7 +7,7 @@ export const Ground = () => {
         position: [0, -0.5, 0]
     }));
 
-    groundTexture.repeat.set(300, 300)
+    groundTexture.repeat.set(200, 200)
 
     return (
         <mesh ref={ref}>
