@@ -17,3 +17,33 @@ html, body, #root {
     left: 50%;
     transform: translate(-50%, -50%)
 }
+
+.texture-selector{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.texture-selector.hidden {
+    top: 110%;
+    transition: all .5s;
+}
+
+.texture-selector img{
+    width: 50px;
+    padding: 3px;
+    background: black;
+    border-radius: 10px;
+    border: solid 5px white;
+    outline: solid 3px black;
+    image-rendering: pixelated;
+}
+
+.texture-selector img.selected{
+   border-color: yellow;
+}
