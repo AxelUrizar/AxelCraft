@@ -2,8 +2,7 @@ import * as images from '../images/images'
 import { useKeyboard } from '../hooks/useKeyboard'
 import { useStore } from '../hooks/useStore'
 
-import { useEffect, useState } from 'react'
-import { div } from 'three/examples/jsm/nodes/nodes.js'
+import { useEffect } from 'react'
 
 export const TextureSelect = () => {
     const [texture, setTexture] = useStore(state => [state.texture, state.setTexture])
