@@ -13,6 +13,8 @@ export const Ground = () => {
     groundTexture.repeat.set(100, 100)
 
     const handleClickGround = e => {
+    console.log('hola')
+    console.log(e.button)
         e.stopPropagation()
         const [x, y, z] = Object.values(e.point)
             .map(n => Math.round(n))

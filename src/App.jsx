@@ -9,20 +9,25 @@ import { TextureSelect } from './components/TextureSelect'
 
 function App() {
     return (
-        <>
-            <Canvas>
-                <Sky sunPosition={[100, 100, 20]} />
-                <ambientLight intensity={0.5} />
-                <Fpv />
-                <Physics>
-                    <Cubes />
-                    <Player />
-                    <Ground />
-                </Physics>
-            </Canvas>
-            <TextureSelect />
-            <div className='pointer'>+</div>
-        </>
+    <>
+      <Canvas>
+        <Sky sunPosition={[100, 100, 20]} />
+        <ambientLight intensity={0.5} />
+        <Fpv />
+        <Physics>
+          <Cubes />
+          <Player />
+          <Ground />
+        </Physics>
+      </Canvas>
+      <TextureSelect />
+      <div className='pointer'>+</div>
+      <div className='instructions'>
+        <p>Use "WASD" to move around.</p>
+        <p>"RightClick" to put a block and "LeftClick" to delete it.</p>
+        <p>1-5 to select type of block.</p>
+      </div>
+    </>
     )
 }
 
